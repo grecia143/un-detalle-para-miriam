@@ -4,41 +4,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Un detalle para Miriam 💗</title>
+<meta name="theme-color" content="#edc8f3">
+<title>Para Miriam 💗🌻</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
 
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  color: #743b60;
-  background: linear-gradient(135deg,
-    #ffe6f1, #f6c6e0, #e7d8fa, #fff0e3, #f7c3dc);
-  background-size: 300% 300%;
-  animation: brillo 12s ease infinite;
+  font-family: 'Dancing Script', cursive;
+  color: #65405e;
+  background:
+    radial-gradient(ellipse at 12% 15%, rgba(255,255,255,.95), transparent 32%),
+    radial-gradient(ellipse at 88% 18%, rgba(255,207,231,.9), transparent 35%),
+    radial-gradient(ellipse at 15% 78%, rgba(197,174,255,.9), transparent 35%),
+    radial-gradient(ellipse at 85% 85%, rgba(255,219,165,.9), transparent 35%),
+    linear-gradient(125deg, #f8d8ed, #d9c9ff, #fff0df, #edc8f3, #ffd6e7);
+  background-size: 180% 180%;
+  animation: tornasol 15s ease infinite;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-@keyframes brillo {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes tornasol {
+  0% { background-position: 0% 40%; }
+  50% { background-position: 100% 60%; }
+  100% { background-position: 0% 40%; }
 }
 
+/* Girasoles y pequeños destellos */
 .flores {
   position: fixed;
   inset: 0;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
-  opacity: .75;
+  opacity: .85;
 }
 
 .flor {
   position: absolute;
   font-size: 25px;
+  filter: drop-shadow(0 2px 4px rgba(139,85,90,.15));
 }
 
 .flor:nth-child(1) { top: 5%; left: 5%; }
@@ -49,52 +62,61 @@ body {
 .flor:nth-child(6) { bottom: 4%; right: 12%; }
 .flor:nth-child(7) { top: 82%; left: 4%; font-size: 16px; }
 .flor:nth-child(8) { top: 31%; right: 3%; font-size: 16px; }
+.flor:nth-child(9) { top: 8%; left: 48%; font-size: 17px; }
+.flor:nth-child(10) { top: 73%; right: 15%; font-size: 20px; }
+.flor:nth-child(11) { top: 92%; left: 48%; font-size: 18px; }
+.flor:nth-child(12) { top: 50%; right: 8%; font-size: 17px; }
 
 main {
   position: relative;
   z-index: 1;
   width: min(680px, 92%);
   margin: 35px auto;
-  padding: 28px 22px;
-  border: 1px solid rgba(255,255,255,.85);
-  border-radius: 26px;
-  background: rgba(255, 250, 253, .76);
-  box-shadow: 0 15px 45px rgba(145, 68, 113, .16);
+  padding: 30px 24px;
+  border: 1px solid rgba(255,255,255,.9);
+  border-radius: 28px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.82),
+    rgba(255,237,249,.75),
+    rgba(234,225,255,.76)
+  );
+  box-shadow: 0 18px 48px rgba(112,65,113,.18);
   text-align: center;
-}
-
-.etiqueta {
-  display: inline-block;
-  padding: 7px 15px;
-  border-radius: 30px;
-  background: #f8d9e9;
-  color: #9d4c7a;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  backdrop-filter: blur(8px);
 }
 
 h1 {
-  font-size: clamp(32px, 7vw, 49px);
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(46px, 10vw, 66px);
   line-height: 1.12;
-  font-weight: normal;
-  margin: 20px 0 12px;
-  color: #a6447d;
+  font-weight: 700;
+  margin: 14px 0;
+  color: #a34781;
 }
 
 .subtitulo {
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  line-height: 1.5;
+  margin: 12px 0 20px;
 }
 
 .marco {
-  width: min(260px, 75%);
-  height: 300px;
+  width: min(270px, 78%);
+  height: 310px;
   margin: 25px auto;
   padding: 7px;
-  border-radius: 130px 130px 22px 22px;
-  background: linear-gradient(140deg, #fff, #e7c4ef, #e9c58e, #f6b9d5);
-  box-shadow: 0 8px 25px #d9a5c355;
+  border-radius: 145px 145px 25px 25px;
+  background: linear-gradient(
+    140deg,
+    #fff,
+    #e8c8ff,
+    #f5d18e,
+    #f4b7d7,
+    #fff
+  );
+  box-shadow: 0 9px 28px rgba(180,111,157,.25);
 }
 
 .marco img {
@@ -102,33 +124,36 @@ h1 {
   height: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 125px 125px 18px 18px;
+  border-radius: 140px 140px 20px 20px;
   background: #f8dfeb;
 }
 
-.nota-foto {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #a46a8d;
-  margin-top: -15px;
-}
-
 .tarjeta {
-  margin: 24px 0;
-  padding: 22px 20px;
-  border-radius: 18px;
-  background: linear-gradient(135deg,
-    rgba(255,255,255,.9), rgba(255,231,243,.8));
+  margin: 26px 0;
+  padding: 23px 21px;
+  border: 1px solid rgba(255,255,255,.8);
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,.88),
+    rgba(255,231,244,.76),
+    rgba(239,230,255,.78)
+  );
   text-align: left;
-  line-height: 1.8;
-  font-size: 16px;
+  line-height: 1.7;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  box-shadow: 0 6px 20px rgba(154,101,145,.08);
 }
 
 .tarjeta h2 {
+  font-family: 'Dancing Script', cursive;
   text-align: center;
-  color: #b14c83;
-  font-size: 23px;
-  font-weight: normal;
+  color: #ad4b83;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 5px 0 18px;
 }
 
 .lista {
@@ -136,66 +161,114 @@ h1 {
   list-style: none;
 }
 
-.lista li { margin: 10px 0; }
+.lista li {
+  margin: 12px 0;
+}
 
 .aviso {
-  margin: 25px 0 15px;
-  padding: 20px 15px;
-  border: 1px dashed #d99abe;
-  border-radius: 18px;
-  background: #fff1f7;
-  font-family: Arial, sans-serif;
+  margin: 26px 0 18px;
+  padding: 22px 17px;
+  border: 2px dashed rgba(192,119,166,.65);
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(255,248,253,.93),
+    rgba(245,235,255,.85),
+    rgba(255,241,222,.83)
+  );
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .aviso strong {
   display: block;
-  font-size: 19px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.2;
   color: #a33e76;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 button {
   border: 0;
   border-radius: 30px;
-  padding: 13px 22px;
-  background: #b84e87;
+  padding: 13px 24px;
+  background: linear-gradient(120deg, #b84e87, #9567c7);
   color: white;
-  font-size: 15px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-weight: 600;
   cursor: pointer;
-  font-family: Arial, sans-serif;
+  box-shadow: 0 5px 14px rgba(151,76,143,.2);
 }
 
-button:hover { background: #953b6b; }
+button:hover {
+  filter: brightness(.94);
+}
 
 #estado {
   margin-top: 12px;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
 }
 
 .final {
-  margin: 28px 0 5px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #a6447d;
+  margin: 30px 0 5px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #984679;
 }
 
 footer {
-  font-family: Arial, sans-serif;
-  font-size: 11px;
-  opacity: .75;
-  margin-top: 24px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 21px;
+  color: #805b80;
+  margin-top: 25px;
 }
 
 @media (max-width: 450px) {
-  main { margin: 14px auto; padding: 24px 16px; }
-  .marco { height: 260px; }
-  .tarjeta { padding: 18px 15px; }
+  main {
+    margin: 14px auto;
+    padding: 24px 16px;
+  }
+
+  .marco {
+    height: 270px;
+  }
+
+  .tarjeta {
+    padding: 19px 15px;
+    font-size: 22px;
+  }
+
+  .tarjeta h2 {
+    font-size: 33px;
+  }
+
+  .subtitulo,
+  .aviso {
+    font-size: 22px;
+  }
+
+  .final {
+    font-size: 29px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="flores" aria-hidden="true">
   <span class="flor">🌻</span>
   <span class="flor">✿</span>
@@ -205,24 +278,22 @@ footer {
   <span class="flor">✿</span>
   <span class="flor">🌼</span>
   <span class="flor">🌻</span>
+  <span class="flor">✧</span>
+  <span class="flor">🌻</span>
+  <span class="flor">✿</span>
+  <span class="flor">🌼</span>
 </div>
 
 <main>
-  <span class="etiqueta">Un pequeño secreto 💌</span>
 
-  <h1>Miriam,<br>tienes una sorpresa 💗</h1>
+  <h1>Miriam,<br>tienes una sorpresa </h1>
 
   <div class="subtitulo">
     Si llegaste hasta aquí, es porque la curiosidad pudo más que tú. 😂
   </div>
 
   <div class="marco">
-    <img src="miriam.jpg"
-         alt="Una foto especial de Miriam"
-         onerror="this.style.opacity='0.15';">
-  </div>
-  <div class="nota-foto">
-    Una foto tuya irá aquí ✨
+    <img src="miriam.jpg" alt="Una foto especial de Miriam">
   </div>
 
   <section class="tarjeta">
@@ -235,17 +306,17 @@ footer {
       <li>🌻 Probabilidad de recibir otro detalle inesperado: bastante alta.</li>
     </ul>
 
-    Gracias por prestarte para mis ocurrencias.
+    Gracias por aceptar parte de mis ocurrencias. 💗
     Espero sacarte unas cuantas sonrisas más.
-    Y no te emociones demasiado… todavía no has visto todo. 😜
-  </section>
+   </section>
 
   <section class="aviso">
-    <strong>📢 ¡Un momentito, Miriam!</strong>
-    Sube el volumen de tu celular antes de continuar.
-    No queremos que te pierdas esta sorpresa musical. 🎶
+    <strong>¡Miriam! 🌻</strong>
 
-    <p>La canción está a punto de empezar… 💗</p>
+    Sube el volumen de tu celular antes de continuar.
+    No quuiero que te pierdas esta sorpresa musical. 🎶
+
+    <p>La canción está a punto de empezar… </p>
 
     <audio id="cancion" preload="auto" autoplay>
       <source src="coro.mp3" type="audio/mpeg">
@@ -261,13 +332,15 @@ footer {
   <div class="final">
     Que nunca te falten motivos para reír,<br>
     detalles inesperados<br>
-    y personas que quieran verte sonreír. 💗
-    <p>Con cariño y muchas ocurrencias. 🌷</p>
+    y personas que quieran verte feliz. 💗
+
+    <p>Con cariño y muchas ocurrencias. 🌻</p>
   </div>
 
   <footer>
     Hecho especialmente para ti ✨
   </footer>
+
 </main>
 
 <script>
@@ -281,7 +354,7 @@ function iniciarMusica() {
     estado.textContent = '';
   }).catch(() => {
     estado.textContent =
-      'Tu celular todavía no permite reproducir el audio.';
+      'No se pudo reproducir el audio. Inténtalo nuevamente.';
   });
 }
 
@@ -295,5 +368,6 @@ window.addEventListener('load', () => {
   });
 });
 </script>
+
 </body>
 </html>
