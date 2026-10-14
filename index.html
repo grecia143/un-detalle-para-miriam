@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Un detalle para Miriam 💗</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #743b60;
+  background: linear-gradient(135deg,
+    #ffe6f1, #f6c6e0, #e7d8fa, #fff0e3, #f7c3dc);
+  background-size: 300% 300%;
+  animation: brillo 12s ease infinite;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@keyframes brillo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.flores {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+  opacity: .75;
+}
+
+.flor {
+  position: absolute;
+  font-size: 25px;
+}
+
+.flor:nth-child(1) { top: 5%; left: 5%; }
+.flor:nth-child(2) { top: 17%; right: 7%; font-size: 19px; }
+.flor:nth-child(3) { top: 43%; left: 3%; font-size: 21px; }
+.flor:nth-child(4) { top: 62%; right: 4%; font-size: 28px; }
+.flor:nth-child(5) { bottom: 9%; left: 9%; font-size: 19px; }
+.flor:nth-child(6) { bottom: 4%; right: 12%; }
+.flor:nth-child(7) { top: 82%; left: 4%; font-size: 16px; }
+.flor:nth-child(8) { top: 31%; right: 3%; font-size: 16px; }
+
+main {
+  position: relative;
+  z-index: 1;
+  width: min(680px, 92%);
+  margin: 35px auto;
+  padding: 28px 22px;
+  border: 1px solid rgba(255,255,255,.85);
+  border-radius: 26px;
+  background: rgba(255, 250, 253, .76);
+  box-shadow: 0 15px 45px rgba(145, 68, 113, .16);
+  text-align: center;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 30px;
+  background: #f8d9e9;
+  color: #9d4c7a;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(32px, 7vw, 49px);
+  line-height: 1.12;
+  font-weight: normal;
+  margin: 20px 0 12px;
+  color: #a6447d;
+}
+
+.subtitulo {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.marco {
+  width: min(260px, 75%);
+  height: 300px;
+  margin: 25px auto;
+  padding: 7px;
+  border-radius: 130px 130px 22px 22px;
+  background: linear-gradient(140deg, #fff, #e7c4ef, #e9c58e, #f6b9d5);
+  box-shadow: 0 8px 25px #d9a5c355;
+}
+
+.marco img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 125px 125px 18px 18px;
+  background: #f8dfeb;
+}
+
+.nota-foto {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #a46a8d;
+  margin-top: -15px;
+}
+
+.tarjeta {
+  margin: 24px 0;
+  padding: 22px 20px;
+  border-radius: 18px;
+  background: linear-gradient(135deg,
+    rgba(255,255,255,.9), rgba(255,231,243,.8));
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.tarjeta h2 {
+  text-align: center;
+  color: #b14c83;
+  font-size: 23px;
+  font-weight: normal;
+}
+
+.lista {
+  padding: 0;
+  list-style: none;
+}
+
+.lista li { margin: 10px 0; }
+
+.aviso {
+  margin: 25px 0 15px;
+  padding: 20px 15px;
+  border: 1px dashed #d99abe;
+  border-radius: 18px;
+  background: #fff1f7;
+  font-family: Arial, sans-serif;
+}
+
+.aviso strong {
+  display: block;
+  font-size: 19px;
+  color: #a33e76;
+  margin-bottom: 7px;
+}
+
+button {
+  border: 0;
+  border-radius: 30px;
+  padding: 13px 22px;
+  background: #b84e87;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+button:hover { background: #953b6b; }
+
+#estado {
+  margin-top: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.final {
+  margin: 28px 0 5px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #a6447d;
+}
+
+footer {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  opacity: .75;
+  margin-top: 24px;
+}
+
+@media (max-width: 450px) {
+  main { margin: 14px auto; padding: 24px 16px; }
+  .marco { height: 260px; }
+  .tarjeta { padding: 18px 15px; }
+}
+</style>
+</head>
+
+<body>
+<div class="flores" aria-hidden="true">
+  <span class="flor">🌻</span>
+  <span class="flor">✿</span>
+  <span class="flor">🌻</span>
+  <span class="flor">🌼</span>
+  <span class="flor">🌻</span>
+  <span class="flor">✿</span>
+  <span class="flor">🌼</span>
+  <span class="flor">🌻</span>
+</div>
+
+<main>
+  <span class="etiqueta">Un pequeño secreto 💌</span>
+
+  <h1>Miriam,<br>tienes una sorpresa 💗</h1>
+
+  <div class="subtitulo">
+    Si llegaste hasta aquí, es porque la curiosidad pudo más que tú. 😂
+  </div>
+
+  <div class="marco">
+    <img src="miriam.jpg"
+         alt="Una foto especial de Miriam"
+         onerror="this.style.opacity='0.15';">
+  </div>
+  <div class="nota-foto">
+    Una foto tuya irá aquí ✨
+  </div>
+
+  <section class="tarjeta">
+    <h2>Informe oficial de esta sorpresa 🤭</h2>
+
+    <ul class="lista">
+      <li>🍫 Nivel de antojo de chocolate: preocupante.</li>
+      <li>😂 Nivel de ocurrencias: no tiene solución.</li>
+      <li>🤗 Abrazos disponibles: sujetos a horario y autorización de la jefa.</li>
+      <li>🌻 Probabilidad de recibir otro detalle inesperado: bastante alta.</li>
+    </ul>
+
+    Gracias por prestarte para mis ocurrencias.
+    Espero sacarte unas cuantas sonrisas más.
+    Y no te emociones demasiado… todavía no has visto todo. 😜
+  </section>
+
+  <section class="aviso">
+    <strong>📢 ¡Un momentito, Miriam!</strong>
+    Sube el volumen de tu celular antes de continuar.
+    No queremos que te pierdas esta sorpresa musical. 🎶
+
+    <p>La canción está a punto de empezar… 💗</p>
+
+    <audio id="cancion" preload="auto" autoplay>
+      <source src="coro.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="escuchar" hidden onclick="iniciarMusica()">
+      Escuchar la sorpresa 🎵
+    </button>
+
+    <div id="estado" aria-live="polite"></div>
+  </section>
+
+  <div class="final">
+    Que nunca te falten motivos para reír,<br>
+    detalles inesperados<br>
+    y personas que quieran verte sonreír. 💗
+    <p>Con cariño y muchas ocurrencias. 🌷</p>
+  </div>
+
+  <footer>
+    Hecho especialmente para ti ✨
+  </footer>
+</main>
+
+<script>
+const audio = document.getElementById('cancion');
+const boton = document.getElementById('escuchar');
+const estado = document.getElementById('estado');
+
+function iniciarMusica() {
+  audio.play().then(() => {
+    boton.hidden = true;
+    estado.textContent = '';
+  }).catch(() => {
+    estado.textContent =
+      'Tu celular todavía no permite reproducir el audio.';
+  });
+}
+
+window.addEventListener('load', () => {
+  audio.play().then(() => {
+    estado.textContent = '';
+  }).catch(() => {
+    boton.hidden = false;
+    estado.textContent =
+      'Toca el botón para iniciar la canción.';
+  });
+});
+</script>
+</body>
+</html>
